@@ -89,7 +89,7 @@ list-style-type: none;
   margin: 1rem 0;
   display: inline-block;
   background-color: brown;
-  height: 220px;
+  height: 300px;
 }
 
 .picture-disc {
@@ -104,6 +104,12 @@ list-style-type: none;
   width: 35%;
 }
 
+.sixty-five-picture{
+  width: 65%;
+}
+.fourty-picture{
+  width: 40%;
+}
 
 .flex {
   display: flex;
@@ -242,7 +248,7 @@ nav > a:hover {
 
 #history-box {
   padding: 1rem 0;
-  margin-bottom: 80px;
+ 
   background-image: url("../images/coconut shell torch.jpg");
 }
 
@@ -270,6 +276,7 @@ nav > a:hover {
 #map-wrapper {
   height: 300px;
   margin-bottom: 93px;
+ 
 }
 
 #map {
