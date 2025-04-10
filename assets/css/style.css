@@ -10,18 +10,24 @@ body {
   font-weight: bold;
 }
 
-
-
 #home {
   background-color: #532b0f;
 }
-
-
 
 .page-header {
   height: 200px;
   background: center 75% / cover no-repeat;
 }
+
+#contact {
+  margin-bottom: 50px;
+}
+
+.top-margin {
+  margin-top: 0;
+}
+
+
 .text-center {
   text-align: center;
 }
@@ -58,15 +64,6 @@ body {
   color: white;
 }
 
-#contact {
-  margin-bottom: 50px;
-}
-
-.contact-boxes-container {
-  height: 150px;
-}
-
-
 
 th,
 td {
@@ -80,9 +77,19 @@ list-style-type: none;
 
 
 
+.black-background {
+  background-color: black;
+}
+
 .black{
   color:black;
 }
+
+.event-background {
+  background-color: black;
+}
+
+
 
 .photo-box {
   width: 33%;
@@ -111,6 +118,7 @@ list-style-type: none;
   width: 40%;
 }
 
+
 .flex {
   display: flex;
 }
@@ -135,10 +143,67 @@ list-style-type: none;
   gap: 20px;
 }
 
+
+.vertical-align {
+  align-self: flex-start;
+}
+
+
+
+.contact-boxes-container {
+  height: 150px;
+}
+
 .contact-box {
   flex: 0 250px;
   height: 250px;
 }
+
+.shedule-box {
+  padding: 2px 0px 25px 2px;
+  border-radius: 8px;
+  width: 100%;
+  margin: 0px 0px 10px 0px;
+  background-color: chocolate;
+  position: relative;
+  text-align: center;
+  top: 30px;
+}
+
+#modern-day-box {
+  background-color: chocolate;
+  text-align: justify;
+  padding: 5px 10px 5px 10px;
+  border-radius: 10px 10px 10px 10px;
+}
+
+
+#history-box {
+  padding: 1rem 0;
+  background-image: url("../images/Coconut-shell-torch.jpg");
+}
+
+
+#first-image-box {
+  background: brown url("../images/old-Perahara.png") center center/ 300px 200px
+    no-repeat;
+}
+
+#second-image-box {
+  background: brown url("../images/Temple\ of\ Tooth\ &\ Lake.png") center
+    center/ 300px 200px no-repeat;
+}
+#third-image-box {
+  background: brown url("../images/dalada-perahera-history1.jpg") center center/
+    300px 200px no-repeat;
+}
+
+#box-size {
+  height: 300px;
+}
+
+
+
 
 h1,
 h2,
@@ -167,9 +232,7 @@ header {
   color: bisque;
 }
 
-.black-background {
-  background-color: black;
-}
+
 
 
 nav > a {
@@ -188,6 +251,8 @@ nav > a:hover {
   color: lightblue;
 }
 
+
+
 .one-third-width-column {
   width: 33.33%;
 }
@@ -195,41 +260,6 @@ nav > a:hover {
 .two-thirds-width-column {
   width: 66.66%;
 }
-
-.vertical-align {
-  align-self: flex-start;
-}
-
-
-
-.shedule-box {
-  padding: 2px 0px 25px 2px;
-  border-radius: 8px;
-  width: 100%;
-  margin: 0px 0px 10px 0px;
-  background-color: chocolate;
-  position: relative;
-  text-align: center;
-  top: 30px;
-}
-
-.top-margin {
-  margin-top: 0;
-}
-
-
-#modern-day-box {
-  background-color: chocolate;
-
-  text-align: justify;
-  padding: 5px 10px 5px 10px;
-  border-radius: 10px 10px 10px 10px;
-}
-
-.event-background {
-  background-color: black;
-}
-
 
 
 .first-perfomer-0ne-third-column {
@@ -246,36 +276,10 @@ nav > a:hover {
   margin-right: -20px;
 }
 
-#history-box {
-  padding: 1rem 0;
- 
-  background-image: url("../images/coconut shell torch.jpg");
-}
-
-
-#first-image-box {
-  background: brown url("../images/old-Perahara.png") center center/ 300px 200px
-    no-repeat;
-}
-
-#second-image-box {
-  background: brown url("../images/Temple\ of\ Tooth\ &\ Lake.png") center
-    center/ 300px 200px no-repeat;
-}
-#third-image-box {
-  background: brown url("../images/dalada-perahera-history1.jpg") center center/
-    300px 200px no-repeat;
-}
-
-#box-size {
-  height: 300px;
-}
-
-
 
 #map-wrapper {
   height: 300px;
-  margin-bottom: 93px;
+  margin-bottom: 110px;
  
 }
 
