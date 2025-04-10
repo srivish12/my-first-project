@@ -2,14 +2,22 @@ body {
   font-family: "Open Sans", Arial, sans-serif;
   margin: 0;
   background-color: rgb(204, 152, 85);
+  font-size: large;
 }
+
+
+.bold {
+  font-weight: bold;
+}
+
+
+
 #home {
   background-color: #532b0f;
-  /*background-image: url('https://codeinstitute.s3-eu-west-1.amazonaws.com/CSSEssentials/coffeehouse.jpg');*/
 }
-.main-picture{
-  width: 100%;
-}
+
+
+
 .page-header {
   height: 200px;
   background: center 75% / cover no-repeat;
@@ -28,6 +36,75 @@ body {
   padding: 5px 50px 5px 50px;
 }
 
+.text-size {
+  font-size: 15px;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+  
+}
+.capitalize{
+  text-transform: capitalize;
+}
+
+.text-box {
+  margin-block-start: 5px;
+  text-align: justify;
+  padding: 0 0 0 2px;
+}
+
+.text-white {
+  color: white;
+}
+
+#contact {
+  margin-bottom: 50px;
+}
+
+.contact-boxes-container {
+  height: 150px;
+}
+
+
+
+th,
+td {
+  border-bottom: 1px solid black;
+}
+
+ul, ol {
+padding: 0;
+list-style-type: none;
+}
+
+
+
+.black{
+  color:black;
+}
+
+.photo-box {
+  width: 33%;
+  margin: 1rem 0;
+  display: inline-block;
+  background-color: brown;
+  height: 220px;
+}
+
+.picture-disc {
+  font-size: small;
+}
+
+.hundred-picture{
+  width: 100%;
+}
+
+.twin-drum-picture{
+  width: 35%;
+}
+
+
 .flex {
   display: flex;
 }
@@ -38,6 +115,23 @@ body {
 
 .vertical-center {
   align-self: center;
+}
+
+.vertical-top {
+  align-self: flex-start;
+}
+
+.last {
+  order: 1;
+}
+
+.gap-20 {
+  gap: 20px;
+}
+
+.contact-box {
+  flex: 0 250px;
+  height: 250px;
 }
 
 h1,
@@ -71,9 +165,6 @@ header {
   background-color: black;
 }
 
-.text-uppercase {
-  text-transform: uppercase;
-}
 
 nav > a {
   text-decoration: none;
@@ -103,11 +194,7 @@ nav > a:hover {
   align-self: flex-start;
 }
 
-.text-box {
-  margin-block-start: 5px;
-  text-align: justify;
-  padding: 0 0 0 2px;
-}
+
 
 .shedule-box {
   padding: 2px 0px 25px 2px;
@@ -124,9 +211,6 @@ nav > a:hover {
   margin-top: 0;
 }
 
-.text-size {
-  font-size: 15px;
-}
 
 #modern-day-box {
   background-color: chocolate;
@@ -140,13 +224,7 @@ nav > a:hover {
   background-color: black;
 }
 
-.text-white {
-  color: white;
-}
 
-.picture-disc {
-  font-size: x-small;
-}
 
 .first-perfomer-0ne-third-column {
   background-color: black;
@@ -168,13 +246,7 @@ nav > a:hover {
   background-image: url("../images/coconut shell torch.jpg");
 }
 
-.photo-box {
-  width: 33%;
-  margin: 1rem 0;
-  display: inline-block;
-  background-color: brown;
-  height: 220px;
-}
+
 #first-image-box {
   background: brown url("../images/old-Perahara.png") center center/ 300px 200px
     no-repeat;
@@ -193,19 +265,30 @@ nav > a:hover {
   height: 300px;
 }
 
-.bold {
-  font-weight: bold;
+
+
+#map-wrapper {
+  height: 300px;
+  margin-bottom: 93px;
 }
+
+#map {
+  height: 100%;
+  width: 100%;
+  border: none;
+}
+
 
 footer {
   background-color: #58483c;
-  padding: 1em;
+  padding: 1em 1em 0.5em 1em;
   text-align: center;
   width: 100%;
   position: fixed;
   bottom: 0;
   right: 0;
   z-index: 3;
+  font-size: medium;
 }
 
 footer > span {
@@ -295,16 +378,7 @@ label {
 }
 
 /* map */
-#map-wrapper {
-  height: 300px;
-  margin-bottom: 101px;
-}
 
-#map {
-  height: 100%;
-  width: 100%;
-  border: none;
-}
 
 /*
 .intro-box{
