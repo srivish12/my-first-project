@@ -1,10 +1,29 @@
-body {
-  font-family: "Open Sans", Arial, sans-serif;
+
+*{
+  padding: 0;
   margin: 0;
-  background-color: rgb(204, 152, 85);
-  font-size: large;
+  box-sizing: border-box;
 }
 
+
+
+
+body {
+  min-height: 100vw;
+  display: flex;
+  flex-direction: column;
+  font-family: "Open Sans", Arial, sans-serif;
+   
+ 
+  /*min-width: 100vw;*/
+ 
+}
+
+main{
+  background-color: rgb(204, 152, 85);
+  flex: 1 0 auto;
+  font-size: large;
+}
 
 .bold {
   font-weight: bold;
@@ -15,8 +34,9 @@ body {
 }
 
 .page-header {
-  height: 200px;
   background: center 75% / cover no-repeat;
+  width: 100%;
+  padding: 1rem 1rem;
 }
 
 #contact {
@@ -27,6 +47,14 @@ body {
   margin-top: 0;
 }
 
+.capitalize{
+  text-transform: capitalize;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+  
+}
 
 .text-center {
   text-align: center;
@@ -46,18 +74,12 @@ body {
   font-size: 15px;
 }
 
-.text-uppercase {
-  text-transform: uppercase;
-  
-}
-.capitalize{
-  text-transform: capitalize;
-}
+
 
 .text-box {
   margin-block-start: 5px;
   text-align: justify;
-  padding: 0 0 0 2px;
+  padding: 0 2px 0 2px;
 }
 
 .text-white {
@@ -79,6 +101,8 @@ list-style-type: none;
 
 .black-background {
   background-color: black;
+  width: 100%;
+
 }
 
 .black{
@@ -121,6 +145,8 @@ list-style-type: none;
 
 .flex {
   display: flex;
+/* flex: 1 1 auto;
+  align-items: center; */
 }
 
 .horizontal-center {
@@ -133,6 +159,10 @@ list-style-type: none;
 
 .vertical-top {
   align-self: flex-start;
+}
+
+.wrap{
+  flex-wrap: wrap;
 }
 
 .last {
