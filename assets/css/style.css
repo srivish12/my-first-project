@@ -15,14 +15,14 @@ body {
   font-family: "Open Sans", Arial, sans-serif;
    
  
-  /*min-width: 100vw;*/
- 
-}
+  }
 
 main{
   background-color: rgb(204, 152, 85);
   flex: 1 0 auto;
   font-size: large;
+  line-height: 30px;
+  
 }
 
 .bold {
