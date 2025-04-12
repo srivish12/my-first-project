@@ -113,6 +113,11 @@ list-style-type: none;
   background-color: black;
 }
 
+#first-image{
+  height: 600px;
+  width: 100%;
+  background: url('../images/perahera1.png') no-repeat center center/cover;
+}
 
 
 .photo-box {
@@ -145,8 +150,8 @@ list-style-type: none;
 
 .flex {
   display: flex;
-/* flex: 1 1 auto;
-  align-items: center; */
+ flex: 1 0 auto;
+  
 }
 
 .horizontal-center {
@@ -276,6 +281,7 @@ nav {
   unicode-bidi: isolate;
   padding: 1rem;
   font-family: "Times New Roman", Times, serif;
+  width: 100%;
 }
 nav > a:hover {
   color: lightblue;
