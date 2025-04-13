@@ -37,6 +37,7 @@ main{
   background: center 75% / cover no-repeat;
   width: 100%;
   padding: 1rem 1rem;
+ 
 }
 
 
@@ -420,7 +421,10 @@ nav {
   padding: 1rem;
   font-family: "Times New Roman", Times, serif;
   width: 100%;
+ 
 }
+
+
 nav > a:hover {
   color: lightblue;
 }
