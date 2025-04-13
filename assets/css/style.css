@@ -45,6 +45,7 @@ main{
 
 .top-margin {
   margin-top: 0;
+  text-align: center;
 }
 
 .capitalize{
@@ -106,6 +107,7 @@ list-style-type: none;
 #contact {
   margin-bottom: 50px;
   padding: 2rem;
+  margin-right: 20px;
 }
 
 
