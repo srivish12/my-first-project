@@ -152,13 +152,6 @@ list-style-type: none;
 
 }
 
-/*
-.event2-last-photos{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}*/
-
 
 .black-background {
   background-color: black;
@@ -179,14 +172,6 @@ list-style-type: none;
   width: 100%;
   background: url('../images/perahera1.png') no-repeat center center/cover;
 }
-/*
-#twin-drum{
-  height: 30vw;
-  width: 30vw;
-  background: url('../images/Twin-drum-performers.jpg') no-repeat center center ;
-  background-size: contain;
-}
-*/
 
 .first-page-first-photo{
   height: 350px;
@@ -336,10 +321,6 @@ list-style-type: none;
   order: 1;
 }
 
-/*.gap-20 {
-  gap: 20px;
-} */
-
 
 .vertical-align {
   align-self: flex-start;
@@ -472,7 +453,7 @@ nav > a:hover {
 
 #map-wrapper {
   height: 300px;
-  margin-bottom: 110px;
+  margin-bottom: 83px;
  
 }
 
@@ -522,22 +503,22 @@ nav{
   width: fit-content;
 }
 
-  /* Adjust padding for better fit on medium and large screens */
+  
   .shedule-box {
       padding: 18px;
   }
 
-  /* Slightly reduce the font size for table headers */
+  
   .schedule-table th {
       font-size: 16px;
   }
 
-  /* Make table data font size smaller on medium screens */
+  
  .schedule-table td {
       font-size: 14px;
   }
 
-  /* Adjust overall table layout (increase padding and reduce column width) */
+  
   .schedule-table th, table.schedule-table td {
       padding: 12px;
   }
@@ -547,27 +528,24 @@ nav{
 
 /* Media query for screens 1024px or smaller */
 @media screen and (max-width: 1024px) {
-  /* Stack the columns vertically */
+  
   #h-content {
       flex-direction: column;
       padding: 10px;
   
 
   .two-thirds-width-column, .one-third-width-column {
-      width: 100%; /* Full width on small screens */
+      width: 100%; 
       padding: 5px;
   }
 
-  /* Adjust images to be responsive */
- 
-
-  /* Adjust text box padding and font size */
+  
   .text-box {
       padding: 10px;
       font-size: 14px;
   }
 
-  /* Reduce the size of images and other content */
+  
   .history-first-photo, 
   .history-second-photo 
   {
@@ -576,34 +554,34 @@ nav{
   }
 
   .picture-disc {
-      font-size: 12px; /* Slightly smaller text on mobile */
-  }
+      font-size: 12px; /
   }
 }
+}
 
-/* Media query for screens 768px or smaller */
+/* Media query for pictures screens 768px or smaller */
 @media (max-width: 768px) {
-  /* Stack the columns vertically */
+  
   #Event1 {
       flex-direction: column;
       padding: 10px;
   }
 
   .two-thirds-width-column, .one-third-width-column {
-      width: 100%; /* Full width on small screens */
+      width: 100%; 
       padding: 5px;
   }
 
-  /* Adjust images to be responsive */
+ 
  
 
-  /* Adjust text box padding and font size */
+  
   .text-box {
       padding: 10px;
       font-size: 14px;
   }
 
-  /* Reduce the size of images and other content */
+  
   .first-page-first-photo, 
   .first-page-second-photo, 
   .first-page-third-photo, 
@@ -613,7 +591,7 @@ nav{
   }
 
   .picture-disc {
-      font-size: 12px; /* Slightly smaller text on mobile */
+      font-size: 12px; 
   }
   
 
@@ -641,7 +619,7 @@ nav{
 }
 
 
-/* Reduce the size of images and other content */
+
 .last-page-first-photo, 
 .last-page-second-photo, 
  .last-page-fourth-photo {
@@ -655,13 +633,13 @@ nav{
 
 }
 
-
+/* Responsive Design for contacts */
 @media screen and (max-width: 768px) {
   #contact {
-      padding: 1rem;  /* Reduced padding on smaller screens */
+      padding: 1rem;  
   }
 
-  /* Stack the contact boxes vertically */
+  
   .contact-boxes-container {
       flex-direction: column;
       align-items: center;
@@ -670,11 +648,11 @@ nav{
   }
 
   .contact-box {
-      width: 100%;  /* Make each box take full width */
-      text-align: center;  /* Ensure the content is centered */
+      width: 100%;  
+      text-align: center;  
   }
 
-  /* Make the table responsive */
+  
   .contact-box table {
       width: 100%;
       margin: 0 auto;
@@ -683,23 +661,21 @@ nav{
 
   .contact-box table th, .contact-box table td {
       padding: 8px;
-      font-size: 14px;  /* Smaller font size for mobile */
+      font-size: 14px;  
   }
 
-  
-
-  /* Adjust the fonts for better readability on smaller screens */
+    
   .text-center h4 {
-      font-size: 18px;  /* Slightly smaller headings */
+      font-size: 18px;  
   }
 
   .bold {
-      font-size: 16px;  /* Smaller font for the bold labels */
+      font-size: 16px;  
   }
 
-  /* Adjust spacing and alignment for 'Get in touch' and 'Address' boxes */
+  
   .contact-box.last, .contact-box.vertical-top {
-      text-align: center;  /* Center all content */
+      text-align: center;  
   }
 }
 
