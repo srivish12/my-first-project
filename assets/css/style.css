@@ -39,6 +39,19 @@ main{
   padding: 1rem 1rem;
 }
 
+footer {
+  background-color: #58483c;
+  padding: 1em 1em 0.5em 1em;
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  
+  z-index: 3;
+  font-size: medium;
+}
+
+
 #contact {
   margin-bottom: 50px;
 }
@@ -97,6 +110,50 @@ padding: 0;
 list-style-type: none;
 }
 
+.schedule-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+
+
+.shedule-box {
+  padding: 2px 0px 25px 2px;
+  border-radius: 8px;
+  width: 100%;
+  margin: 0px 0px 10px 0px;
+  background-color: chocolate;
+  position: relative;
+  text-align: center;
+  
+}
+
+/*
+.shedule-box {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: chocolate;
+}
+
+*/
+
+
+#event1{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+   padding: 20px;
+}
+
+#event2{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+   padding: 20px;
+}
 
 
 .black-background {
@@ -118,6 +175,68 @@ list-style-type: none;
   width: 100%;
   background: url('../images/perahera1.png') no-repeat center center/cover;
 }
+/*
+#twin-drum{
+  height: 30vw;
+  width: 30vw;
+  background: url('../images/Twin-drum-performers.jpg') no-repeat center center ;
+  background-size: contain;
+}
+*/
+
+.first-page-first-photo{
+  height: 350px;
+  width: 100%;
+  background: url('../images/The-Kap-Chanting-Ceremony-2023-4.jpg') no-repeat center center/cover;
+}
+
+.first-page-second-photo{
+  height: 350px;
+  width: 100%;
+  background: url('../images/Casket-carried-to-the-tusker-for-Kumbal-procession.jpg') no-repeat center center/cover;
+}
+
+.first-page-third-photo{
+  height: 350px;
+  width: 100%;
+  background: url('../images/Sword-and-Flag-bearers.jpg') no-repeat center center/cover;
+}
+
+.first-page-fourth-photo{
+  height: 350px;
+  width: 100%;
+  background: url('../images/Day-procession.jpg') no-repeat center center/cover;
+}
+
+
+
+
+.second-page-first-photo{
+  height: 350px;
+  width: 100%;
+  background: url('../images/sacred-Tooth-relic-casket.jpeg') no-repeat center center/cover;
+}
+
+.second-page-second-photo{
+  height: 600px;
+  width: 100%;
+  background: url('../images/Tusker-stepping-out-form-the-Palace.jpg') no-repeat center center/cover;
+}
+
+.second-page-third-photo{
+  height: 350px;
+  width: 100%;
+  background: url('../images/esala-procession.jpg') no-repeat center center/cover;
+}
+
+.second-page-fourth-photo{
+  height: 600px;
+  width: 100%;
+  background: url('../images/wess-dancer.jpg') no-repeat center center/cover;
+}
+
+
+
 
 
 .photo-box {
@@ -192,17 +311,6 @@ list-style-type: none;
 .contact-box {
   flex: 0 250px;
   height: 250px;
-}
-
-.shedule-box {
-  padding: 2px 0px 25px 2px;
-  border-radius: 8px;
-  width: 100%;
-  margin: 0px 0px 10px 0px;
-  background-color: chocolate;
-  position: relative;
-  text-align: center;
-  top: 30px;
 }
 
 #modern-day-box {
@@ -291,10 +399,12 @@ nav > a:hover {
 
 .one-third-width-column {
   width: 33.33%;
+  padding: 10px;
 }
 
 .two-thirds-width-column {
   width: 66.66%;
+  padding: 10px;
 }
 
 
@@ -326,17 +436,7 @@ nav > a:hover {
 }
 
 
-footer {
-  background-color: #58483c;
-  padding: 1em 1em 0.5em 1em;
-  text-align: center;
-  width: 100%;
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  z-index: 3;
-  font-size: medium;
-}
+
 
 footer > span {
   color: silver;
@@ -353,131 +453,113 @@ footer > p {
   color: silver;
 }
 
-/* 
-input[type=submit] {
-	margin-top: 20px;
-	margin-left: 0.75rem;
-	padding: 0.75rem;
-	background-color: #5e361b;
-	color: white;
-	border: none;
-	border-radius: 5px;
+
+
+/* Media query for screens 1400px and smaller */
+@media screen and (max-width: 1400px) {
+
+nav{
+  display: block;
+  position: relative;
+  width: fit-content;
 }
 
-input[type=text],
-input[type=email],
-input[list=coffees] {
-    height: 30px;
-    width: 90%;
-    padding-left: 10px;
-	margin: 0 auto;
+  /* Adjust padding for better fit on medium and large screens */
+  .shedule-box {
+      padding: 18px;
+  }
+
+  /* Slightly reduce the font size for table headers */
+  .schedule-table th {
+      font-size: 16px;
+  }
+
+  /* Make table data font size smaller on medium screens */
+ .schedule-table td {
+      font-size: 14px;
+  }
+
+  /* Adjust overall table layout (increase padding and reduce column width) */
+  .schedule-table th, table.schedule-table td {
+      padding: 12px;
+  }
+
+
+  #Event2 {
+    flex-direction: column;
+    padding: 10px;
 }
 
-overrides css above 
-input[list=coffees] {
-    width: 45%;
+.two-thirds-width-column, .one-third-width-column {
+    width: 100%; /* Full width on small screens */
+    padding: 5px;
 }
 
-select {
-    height: 30px;
-    width: 100px;
-    padding-left: 10px;
+/* Adjust images to be responsive */
+
+
+/* Adjust text box padding and font size */
+.text-box {
+    padding: 10px;
+    font-size: 14px;
 }
 
-form {
-	width: 700px;
-	padding: 25px;
-	border-radius: 8px;
-	margin: 25px auto;
-	background-color: white;
+/* Reduce the size of images and other content */
+.second-page-first-photo, 
+.second-page-third-photo 
+ {
+    width: 100%;
+    height: 400px;
 }
 
-.block-label {
-	display: block;
+.second-page-second-photo, 
+ .second-page-fourth-photo {
+    width: 100%;
+    height: 500px;
 }
-
-legend {
-	font-size: large;
-	font-weight: 600;
-	text-transform: uppercase;
-	margin: 20px 0 10px 0;
-}
-
-label {
-    margin: 10px 15px 5px 0;
-}
-
-.checkboxes-box div {
-    margin-top: 15px;
-}
-
-#reasons li {
-    margin-top: 5%;
-}
-
-#terms {
-    height: 200px;
-    width: 90%;
-    padding: 0.5rem;
-    margin: 1.5rem 0 0 15px;
-    border: 1px solid grey;
-    overflow: scroll;
-}
-
-/* map */
-
-
-/*
-.intro-box{
-    height: 200px;
-    width: 1500;
-   
-   }
-
- #left-1{
-  width: 1000px;
-  image-rendering: unset;
- }
-
-#right-2{
-    position: relative;
-  left: 1000px;
-    height: 200px;
-    width: 300px;
-    top: -200px;
+.picture-disc {
+    font-size: 12px; /* Slightly smaller text on mobile */
 }
 
 
-.intro-sec{
-    width: 500px;
-    height: 200px;
-    /*border: 5px solid rgb(16, 169, 80);
-    /* FLEX PARENT PROPERTIES */
-/*display: flex;
-    flex-wrap: wrap;
-    /*justify-content: space-around;*/
-/* align-items:right;
-    flex-direction: row;
-    left: 500px;
-}
-*/
-/*
-.intro-para {
-    background-color: orangered;
-    text-align: center;
-    font-size: 20px;
-width: 200px;
-    margin: 5px;
-    align-items: center;
-    
-    
-}
-
-.body{
-    background-color: rgb(234, 240, 242);
-    background-image: url("../images/pexels-larissafarber-30975332.jpg" );
 }
 
 
 
-*/
+/* Media query for screens 768px or smaller */
+@media (max-width: 768px) {
+  /* Stack the columns vertically */
+  #Event1 {
+      flex-direction: column;
+      padding: 10px;
+  }
+
+  .two-thirds-width-column, .one-third-width-column {
+      width: 100%; /* Full width on small screens */
+      padding: 5px;
+  }
+
+  /* Adjust images to be responsive */
+ 
+
+  /* Adjust text box padding and font size */
+  .text-box {
+      padding: 10px;
+      font-size: 14px;
+  }
+
+  /* Reduce the size of images and other content */
+  .first-page-first-photo, 
+  .first-page-second-photo, 
+  .first-page-third-photo, 
+  .first-page-fourth-photo {
+      width: 100%;
+      height: 200px;
+  }
+
+  .picture-disc {
+      font-size: 12px; /* Slightly smaller text on mobile */
+  }
+}
+
+
