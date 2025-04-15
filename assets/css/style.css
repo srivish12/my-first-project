@@ -610,6 +610,11 @@ footer > p {
     height: 500px;
   }
 
+#first-image-box{
+  width: 70%;
+}
+
+
   #l-journey-plan {
     flex-direction: column;
     padding: 10px;
@@ -671,6 +676,11 @@ footer > p {
     font-size: 12px;
     padding: 0.25em 0.5em;
       }
+}
 
-       
+@media screen and (max-width: 425px){
+
+  #first-image-box,#second-image-box,#third-image-box{
+    width: 100%;
+  }
 }
