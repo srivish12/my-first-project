@@ -21,25 +21,12 @@ main {
 .top-button-container {
   display: flex;
   justify-content: flex-end;
-  }
+}
 
 .f-top-button {
   display: inline-block;
   padding: 0.5em 1em;
-  background-color:white ;
-  color: black;
-  text-decoration: none;
-  border-radius: 4px;
-  font-size: 1em;
-  border: none;
-  cursor: pointer;
- 
- }
-
-.top-button {
-  display: inline-block;
-  padding: 0.5em 1em;
-  background-color:white ;
+  background-color: white;
   color: black;
   text-decoration: none;
   border-radius: 4px;
@@ -48,6 +35,17 @@ main {
   cursor: pointer;
 }
 
+.top-button {
+  display: inline-block;
+  padding: 0.5em 1em;
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 1em;
+  border: none;
+  cursor: pointer;
+}
 
 .bold {
   font-weight: bold;
@@ -78,7 +76,6 @@ main {
 
 .text-center {
   text-align: center;
-  
 }
 
 #text-center {
@@ -86,12 +83,12 @@ main {
   padding: 5px 10px 5px 10px;
 }
 
-#m-text-center{
+#m-text-center {
   text-align: center;
   padding: 5px 10px 5px 10px;
 }
 
-#g-text-center{
+#g-text-center {
   text-align: center;
   padding: 5px 10px 5px 10px;
 }
@@ -101,7 +98,7 @@ main {
   padding: 5px 50px 5px 50px;
 }
 
-#l-text-shrink{
+#l-text-shrink {
   text-align: center;
   padding: 5px 50px 5px 50px;
 }
@@ -462,11 +459,10 @@ nav > a:hover {
   margin-right: -20px;
 }
 
-
 .responsive-map {
   position: relative;
   width: 100%;
-  padding-bottom: 400px; 
+  padding-bottom: 400px;
   height: 0;
   overflow: hidden;
 }
@@ -479,7 +475,6 @@ nav > a:hover {
   height: 75%;
   border: 0;
 }
-
 
 footer {
   background-color: #58483c;
@@ -508,7 +503,6 @@ footer > p {
   color: silver;
 }
 
-
 @media screen and (max-width: 1400px) {
   nav {
     display: block;
@@ -533,7 +527,6 @@ footer > p {
     padding: 12px;
   }
 }
-
 
 @media screen and (max-width: 1024px) {
   #h-content {
@@ -562,7 +555,6 @@ footer > p {
     font-size: 12px;
   }
 }
-
 
 @media screen and (max-width: 768px) {
   #Event1 {
@@ -610,10 +602,9 @@ footer > p {
     height: 500px;
   }
 
-#first-image-box{
-  width: 70%;
-}
-
+  #first-image-box {
+    width: 70%;
+  }
 
   #l-journey-plan {
     flex-direction: column;
@@ -672,15 +663,17 @@ footer > p {
     text-align: center;
   }
 
-  .top-button,.f-top-button{
+  .top-button,
+  .f-top-button {
     font-size: 12px;
     padding: 0.25em 0.5em;
-      }
+  }
 }
 
-@media screen and (max-width: 425px){
-
-  #first-image-box,#second-image-box,#third-image-box{
+@media screen and (max-width: 425px) {
+  #first-image-box,
+  #second-image-box,
+  #third-image-box {
     width: 100%;
   }
 }
