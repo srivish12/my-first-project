@@ -17,32 +17,38 @@ main {
   font-size: large;
   line-height: 30px;
 }
-/*
-button{
-  appearance: auto;
-  box-sizing: border-box;
-    background-color: white;
-    margin: 0em;
-    padding-block: 1px;
-    padding-inline: 6px;
-    text-align: center;
-}
-#myBtn {
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 30px;
-  z-index: 99;
-  font-size: 18px;
-  border: none;
-  outline: none;
-  background-color: white;
-  color:black;
-  cursor: pointer;
-  padding: 15px;
+
+.top-button-container {
+  display: flex;
+  justify-content: flex-end;
+  }
+
+.f-top-button {
+  display: inline-block;
+  padding: 0.5em 1em;
+  background-color:white ;
+  color: black;
+  text-decoration: none;
   border-radius: 4px;
+  font-size: 1em;
+  border: none;
+  cursor: pointer;
+ 
+ }
+
+.top-button {
+  display: inline-block;
+  padding: 0.5em 1em;
+  background-color:white ;
+  color: black;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 1em;
+  border: none;
+  cursor: pointer;
 }
-*/
+
+
 .bold {
   font-weight: bold;
 }
@@ -72,6 +78,7 @@ button{
 
 .text-center {
   text-align: center;
+  
 }
 
 #text-center {
@@ -79,7 +86,22 @@ button{
   padding: 5px 10px 5px 10px;
 }
 
+#m-text-center{
+  text-align: center;
+  padding: 5px 10px 5px 10px;
+}
+
+#g-text-center{
+  text-align: center;
+  padding: 5px 10px 5px 10px;
+}
+
 #text-shrink {
+  text-align: center;
+  padding: 5px 50px 5px 50px;
+}
+
+#l-text-shrink{
   text-align: center;
   padding: 5px 50px 5px 50px;
 }
@@ -440,20 +462,28 @@ nav > a:hover {
   margin-right: -20px;
 }
 
-#map-wrapper {
-  height: 300px;
-  margin-bottom: 83px;
+
+.responsive-map {
+  position: relative;
+  width: 100%;
+  padding-bottom: 400px; 
+  height: 0;
+  overflow: hidden;
 }
 
-#map {
-  height: 100%;
+.responsive-map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  border: none;
+  height: 75%;
+  border: 0;
 }
+
 
 footer {
   background-color: #58483c;
-  padding: 1em 1em 0.5em 1em;
+  padding: 1.5em 1em 1em 1em;
   text-align: center;
   width: 100%;
   position: fixed;
@@ -478,7 +508,7 @@ footer > p {
   color: silver;
 }
 
-/* Media query for screens 1400px and smaller */
+
 @media screen and (max-width: 1400px) {
   nav {
     display: block;
@@ -504,7 +534,7 @@ footer > p {
   }
 }
 
-/* Media query for screens 1024px or smaller */
+
 @media screen and (max-width: 1024px) {
   #h-content {
     flex-direction: column;
@@ -533,7 +563,7 @@ footer > p {
   }
 }
 
-/* Media query for pictures screens 768px or smaller */
+
 @media screen and (max-width: 768px) {
   #Event1 {
     flex-direction: column;
@@ -636,4 +666,11 @@ footer > p {
   .contact-box.vertical-top {
     text-align: center;
   }
+
+  .top-button,.f-top-button{
+    font-size: 12px;
+    padding: 0.25em 0.5em;
+      }
+
+       
 }
